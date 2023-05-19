@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "eslint": "^8.40.0",
+    "prisma": "^4.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.14.0",
+    "lucide-react": "^0.219.0",
+    "zod": "^3.21.4"
+  }
+}
