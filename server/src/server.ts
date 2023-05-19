@@ -1,6 +1,8 @@
+import 'dotenv/config'
 import fastify from 'fastify'
 import { memoriesRoutes } from './routes/memories'
 import cors from '@fastify/cors'
+import { authRoutes } from './routes/auth'
 
 const app = fastify()
 
@@ -9,6 +11,7 @@ app.register(cors, {
     // trocar true pelas url's de produção
 })
 
+app.register(authRoutes)
 app.register(memoriesRoutes)
 
 app.listen({
